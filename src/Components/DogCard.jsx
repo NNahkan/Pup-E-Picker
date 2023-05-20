@@ -4,6 +4,7 @@ import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
 export const DogCard = ({
   dog: { name, image, description, id, isFavorite },
+  deleteDog,
 }) => {
   return (
     <div className="dog-card">
@@ -15,7 +16,10 @@ export const DogCard = ({
       )}
 
       {/* Use this button to delete a puppy :( */}
-      <TrashButton disabled={true} onClick={() => {}} />
+      <TrashButton
+        //   disabled={true}
+        onClick={() => deleteDog(id)}
+      />
 
       {/* Ignore this  */}
       {/* You can temporarily set a favorite overlay after a user favoritest a dog */}
