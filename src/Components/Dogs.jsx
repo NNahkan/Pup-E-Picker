@@ -1,27 +1,43 @@
-import { useEffect } from "react";
 import { DogCard } from "./DogCard";
+
+const URL = "http://localhost:3000/dogs/";
 
 export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
   const deleteDog = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/dogs/${id}`, {
+      const response = await fetch(`${URL}${id}`, {
         method: "DELETE",
       });
       console.log(data);
       if (response.ok) {
-        const dogs = data.filter((item) => item.id !== id);
-        console.log(dogs);
-      //   setData(dogs);
-		fetchData();
+        setData((prevState) => prevState.filter((item) => item.id !== id));
+        //   fetchData();
       }
     } catch (error) {
       console.error(`Error: ${error}`);
     }
   };
-  /* 
-  useEffect(() => {
-    console.log(data);
-  }, [data]); */
+
+  const changeFavorite = async (dog) => {
+    dog.isFavorite = !dog.isFavorite;
+    try {
+      const response = await fetch(`${URL}${dog.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dog),
+      });
+      if (response.ok) {
+        setData((prevState) =>
+          prevState.map((item) => (item.id === dog.id ? dog : item))
+        );
+        //   fetchData();
+      }
+    } catch (error) {
+      console.error(`Error: ${error}`);
+    }
+  };
 
   return (
     //  the "<> </>"" are called react fragments, it's like adding all the html inside
@@ -31,7 +47,12 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
         (dog) =>
           !!dog &&
           dog.isFavorite === isFavorite && (
-            <DogCard deleteDog={deleteDog} dog={dog} key={dog.id} />
+            <DogCard
+              changeFavorite={changeFavorite}
+              deleteDog={deleteDog}
+              dog={dog}
+              key={dog.id}
+            />
           )
       )}
     </>

@@ -2,17 +2,16 @@ import { useState } from "react";
 import { FavoriteButton } from "./FavoriteButton";
 import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
-export const DogCard = ({
-  dog: { name, image, description, id, isFavorite },
-  deleteDog,
-}) => {
+export const DogCard = ({ dog, deleteDog, changeFavorite }) => {
+
+  const { name, image, description, id, isFavorite } = dog;
   return (
     <div className="dog-card">
       {/* Choose which button to show depending on if dog is a favorite */}
       {isFavorite ? (
-        <UnfavoriteButton onClick={() => {}} />
+        <UnfavoriteButton onClick={() => changeFavorite(dog)} />
       ) : (
-        <FavoriteButton onClick={() => {}} />
+        <FavoriteButton onClick={() => changeFavorite(dog)} />
       )}
 
       {/* Use this button to delete a puppy :( */}

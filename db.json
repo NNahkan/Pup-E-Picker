@@ -1,129 +1,143 @@
 {
   "dogs": [
     {
-      "name": "Trevor",
-      "image": "/src/assets/dalmation.png",
-      "description": "Soft Hat non Montserrat Wisoky Garden calculating modular",
+      "name": "Salvador",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "Angola Iridium Estate Plastic Passenger",
       "isFavorite": false,
       "id": 0
     },
     {
-      "name": "Georgianna",
-      "image": "/src/assets/boxer.png",
-      "description": "dining SUV Sri Progressive zero South Southeast",
+      "name": "Dillan",
+      "image": "/src/assets/corgi.png",
+      "description": "synergize Santa violet bandwidth Female Center optical",
       "isFavorite": false,
       "id": 1
     },
     {
-      "name": "Joanne",
-      "image": "/src/assets/boxer.png",
-      "description": "Salad Oxygen Cary cost pink up improvement",
+      "name": "Xavier",
+      "image": "/src/assets/corgi.png",
+      "description": "Hat Rest tesla East navigating flippant Internal",
+      "isFavorite": false,
+      "id": 2
+    },
+    {
+      "name": "Floyd",
+      "image": "/src/assets/cowardly.png",
+      "description": "Lamborghini invoice wherever judgementally Convertible",
       "isFavorite": false,
       "id": 3
     },
     {
-      "name": "Amalia",
-      "image": "/src/assets/boxer.png",
-      "description": "white Fresh finally adapter East array elliptical",
+      "name": "Thaddeus",
+      "image": "/src/assets/dalmation.png",
+      "description": "Electric Wall Bronze Liaison Convertible Assistant Officer synthesizing",
       "isFavorite": false,
       "id": 4
     },
     {
-      "name": "Marcia",
+      "name": "Leora",
       "image": "/src/assets/corgi.png",
-      "description": "Potassium Southwest Southwest vel woot Boliviano invoice",
+      "description": "Latin Hip Direct deliver Frozen Unbranded JBOD",
+      "isFavorite": false,
+      "id": 5
+    },
+    {
+      "name": "Matilda",
+      "image": "/src/assets/corgi.png",
+      "description": "Parker Hempstead Cameroon male Automotive Buckinghamshire Supervisor mindshare",
       "isFavorite": false,
       "id": 6
     },
     {
-      "name": "Torrey",
+      "name": "Nikolas",
       "image": "/src/assets/corgi.png",
-      "description": "Tools Books Reggae Cotton metrics",
-      "isFavorite": false,
+      "description": "Incredible Diesel Accountability technologies Response",
+      "isFavorite": true,
       "id": 7
     },
     {
-      "name": "Buck",
-      "image": "/src/assets/corgi.png",
-      "description": "olive Waco Persistent North Keyboard Tasty broadly",
+      "name": "Ignacio",
+      "image": "/src/assets/dalmation.png",
+      "description": "Colorado East Music Clothing groupware Trans Northeast",
       "isFavorite": false,
       "id": 8
     },
     {
-      "name": "Loma",
-      "image": "/src/assets/cowardly.png",
-      "description": "Technician Dodge New elastic tan Argon bandwidth",
+      "name": "Dessie",
+      "image": "/src/assets/dalmation.png",
+      "description": "Sedan male generating Marketing deposit",
       "isFavorite": false,
       "id": 9
     },
     {
-      "name": "Estrella",
+      "name": "Sam",
       "image": "/src/assets/blue-heeler.png",
-      "description": "Ethiopia degree Usability indexing impactful innovate Plains",
+      "description": "copy female compress knowledgeably Afghanistan Fresh patiently Tuna",
       "isFavorite": true,
       "id": 10
     },
     {
-      "name": "Clint",
-      "image": "/src/assets/dalmation.png",
-      "description": "payment Mini RSS Licensed reciprocal mispronounce Chair",
-      "isFavorite": true,
+      "name": "Joany",
+      "image": "/src/assets/boxer.png",
+      "description": "vertical hacking silver Direct Account",
+      "isFavorite": false,
       "id": 11
     },
     {
-      "name": "Lennie",
+      "name": "Iliana",
       "image": "/src/assets/chihuahua.avif",
-      "description": "input reliability optical Garden Kroon policy nonconforming Swiss",
-      "isFavorite": true,
+      "description": "plum grey Account Fiat Berkshire",
+      "isFavorite": false,
       "id": 12
     },
     {
-      "name": "Laurence",
-      "image": "/src/assets/corgi.png",
-      "description": "blue South East Lilangeni Compatible olive brr Bespoke",
-      "isFavorite": true,
+      "name": "Jordon",
+      "image": "/src/assets/boxer.png",
+      "description": "please Bicycle PNG Northeast global ivory holistic withdrawal",
+      "isFavorite": false,
       "id": 13
     },
     {
-      "name": "Forest",
-      "image": "/src/assets/boxer.png",
-      "description": "Lempira Extensions Salad Northwest at Ford Electric Gasoline",
-      "isFavorite": true,
+      "name": "Caterina",
+      "image": "/src/assets/corgi.png",
+      "description": "Cisgender Minivan whenever Kelli Practical Tennessine athwart vertical",
+      "isFavorite": false,
       "id": 14
     },
     {
-      "name": "Mason",
-      "image": "/src/assets/boxer.png",
-      "description": "Tasty Plantation yuck against male",
-      "isFavorite": false,
+      "name": "Willie",
+      "image": "/src/assets/dalmation.png",
+      "description": "deposit Smart Delaware Buckinghamshire Northwest Account parse ability",
+      "isFavorite": true,
       "id": 15
     },
     {
-      "name": "Luciano",
-      "image": "/src/assets/cowardly.png",
-      "description": "Ohio Liaison Gasoline Sausages reboot",
+      "name": "Kasandra",
+      "image": "/src/assets/boxer.png",
+      "description": "composer index Concrete Ergonomic Lempira",
       "isFavorite": false,
       "id": 16
     },
     {
-      "name": "Camren",
-      "image": "/src/assets/cowardly.png",
-      "description": "copying matrix dolore lime Jersey",
-      "isFavorite": false,
+      "name": "Ora",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "Sleek copying Gorgeous female slider Won Hybrid",
+      "isFavorite": true,
       "id": 17
     },
     {
-      "name": "Luigi",
-      "image": "/src/assets/corgi.png",
-      "description": "Account calculate Northeast navigating Manchester Metrics Sudan",
+      "name": "Julian",
+      "image": "/src/assets/boxer.png",
+      "description": "Colorado Connecticut lost Administrator Southwest auxiliary Executive Bicycle",
       "isFavorite": false,
       "id": 18
     },
     {
-      "name": "Emmie",
-      "image": "/src/assets/cowardly.png",
-      "description": "chief Southwest Savings Interactions consequently",
-      "isFavorite": true,
+      "name": "Nels",
+      "image": "/src/assets/boxer.png",
+      "description": "Sausages VGA Gorgeous feed blah temporariness wireless Pangender",
+      "isFavorite": false,
       "id": 19
     }
   ]

@@ -5,20 +5,21 @@ import { Dogs } from "./Components/Dogs";
 import { Section } from "./Components/Section";
 import "./fonts/RubikBubbles-Regular.ttf";
 
+const URL = "http://localhost:3000/dogs"
+
 function App() {
   const [data, setData] = useState(null);
   const [isFavorite, setIsFavorite] = useState(true);
 
   const fetchData = async () => {
-    const response = await fetch("http://localhost:3000/dogs");
+    const response = await fetch(URL);
     const newData = await response.json();
     setData(newData);
   };
 
   useEffect(() => {
     fetchData();
-    console.log(isFavorite);
-  }, []);
+   }, []);
 
   return (
     data && (
