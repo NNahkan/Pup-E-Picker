@@ -1,142 +1,128 @@
 {
   "dogs": [
     {
-      "name": "Salvador",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "Angola Iridium Estate Plastic Passenger",
+      "name": "Clarissa",
+      "image": "/src/assets/cowardly.png",
+      "description": "Oriental Southwest process West archive",
       "isFavorite": false,
       "id": 0
     },
     {
-      "name": "Dillan",
-      "image": "/src/assets/corgi.png",
-      "description": "synergize Santa violet bandwidth Female Center optical",
+      "name": "Waldo",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "female generation JSON Reduced Sierra Bike Recumbent Frozen",
       "isFavorite": false,
       "id": 1
     },
     {
-      "name": "Xavier",
+      "name": "Courtney",
       "image": "/src/assets/corgi.png",
-      "description": "Hat Rest tesla East navigating flippant Internal",
-      "isFavorite": false,
-      "id": 2
-    },
-    {
-      "name": "Floyd",
-      "image": "/src/assets/cowardly.png",
-      "description": "Lamborghini invoice wherever judgementally Convertible",
+      "description": "invoice Transgender male disintermediate female",
       "isFavorite": false,
       "id": 3
     },
     {
-      "name": "Thaddeus",
+      "name": "Rahsaan",
       "image": "/src/assets/dalmation.png",
-      "description": "Electric Wall Bronze Liaison Convertible Assistant Officer synthesizing",
-      "isFavorite": false,
-      "id": 4
-    },
-    {
-      "name": "Leora",
-      "image": "/src/assets/corgi.png",
-      "description": "Latin Hip Direct deliver Frozen Unbranded JBOD",
-      "isFavorite": false,
+      "description": "magenta bah Supervisor forward female",
+      "isFavorite": true,
       "id": 5
     },
     {
-      "name": "Matilda",
-      "image": "/src/assets/corgi.png",
-      "description": "Parker Hempstead Cameroon male Automotive Buckinghamshire Supervisor mindshare",
+      "name": "Emmie",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Electric Loan Hybrid crushing Fantastic",
       "isFavorite": false,
       "id": 6
     },
     {
-      "name": "Nikolas",
-      "image": "/src/assets/corgi.png",
-      "description": "Incredible Diesel Accountability technologies Response",
+      "name": "Brandi",
+      "image": "/src/assets/cowardly.png",
+      "description": "Security calmly New maiores boo",
       "isFavorite": true,
       "id": 7
     },
     {
-      "name": "Ignacio",
-      "image": "/src/assets/dalmation.png",
-      "description": "Colorado East Music Clothing groupware Trans Northeast",
+      "name": "Reta",
+      "image": "/src/assets/cowardly.png",
+      "description": "override Buckinghamshire into radian transmitter",
       "isFavorite": false,
       "id": 8
     },
     {
-      "name": "Dessie",
-      "image": "/src/assets/dalmation.png",
-      "description": "Sedan male generating Marketing deposit",
+      "name": "Sven",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "Zambia picket Jordan niches duh",
       "isFavorite": false,
       "id": 9
     },
     {
-      "name": "Sam",
+      "name": "Wilfrid",
       "image": "/src/assets/blue-heeler.png",
-      "description": "copy female compress knowledgeably Afghanistan Fresh patiently Tuna",
+      "description": "transmitting towards contingency Games neural quantifying wireless synthesizing",
       "isFavorite": true,
       "id": 10
     },
     {
-      "name": "Joany",
-      "image": "/src/assets/boxer.png",
-      "description": "vertical hacking silver Direct Account",
+      "name": "Wilfredo",
+      "image": "/src/assets/cowardly.png",
+      "description": "empowering Savings Rupee Refined Sausages support Kip",
       "isFavorite": false,
       "id": 11
     },
     {
-      "name": "Iliana",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "plum grey Account Fiat Berkshire",
+      "name": "Zachery",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "reintermediate wireless model World fast Thulium Kilback",
       "isFavorite": false,
       "id": 12
     },
     {
-      "name": "Jordon",
-      "image": "/src/assets/boxer.png",
-      "description": "please Bicycle PNG Northeast global ivory holistic withdrawal",
+      "name": "Lorine",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "multimedia Unbranded male Country twister",
       "isFavorite": false,
       "id": 13
     },
     {
-      "name": "Caterina",
-      "image": "/src/assets/corgi.png",
-      "description": "Cisgender Minivan whenever Kelli Practical Tennessine athwart vertical",
-      "isFavorite": false,
+      "name": "Mose",
+      "image": "/src/assets/dalmation.png",
+      "description": "Towels female Direct South Account Strategist Idaho Road",
+      "isFavorite": true,
       "id": 14
     },
     {
-      "name": "Willie",
-      "image": "/src/assets/dalmation.png",
-      "description": "deposit Smart Delaware Buckinghamshire Northwest Account parse ability",
-      "isFavorite": true,
+      "name": "Marjolaine",
+      "image": "/src/assets/cowardly.png",
+      "description": "Fish backing Non Shoes East MTF Account South",
+      "isFavorite": false,
       "id": 15
     },
     {
-      "name": "Kasandra",
-      "image": "/src/assets/boxer.png",
-      "description": "composer index Concrete Ergonomic Lempira",
-      "isFavorite": false,
+      "name": "Mona",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "alarm Hybrid quantify architect male",
+      "isFavorite": true,
       "id": 16
     },
     {
-      "name": "Ora",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "Sleek copying Gorgeous female slider Won Hybrid",
+      "name": "Demond",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Hybrid Trial male Hydrogen compelling Cotton restfully",
       "isFavorite": true,
       "id": 17
     },
     {
-      "name": "Julian",
+      "name": "Mikayla",
       "image": "/src/assets/boxer.png",
-      "description": "Colorado Connecticut lost Administrator Southwest auxiliary Executive Bicycle",
+      "description": "grieve Washington Metal skeleton mole Bedfordshire BMW",
       "isFavorite": false,
       "id": 18
     },
     {
-      "name": "Nels",
-      "image": "/src/assets/boxer.png",
-      "description": "Sausages VGA Gorgeous feed blah temporariness wireless Pangender",
+      "name": "Schuyler",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "muffled Car because 24 Intuitive",
       "isFavorite": false,
       "id": 19
     }

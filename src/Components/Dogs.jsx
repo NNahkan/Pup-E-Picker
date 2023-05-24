@@ -43,9 +43,15 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
     //  the "<> </>"" are called react fragments, it's like adding all the html inside
     // without adding an actual html element
     <>
-      {data.map(
-        (dog) =>
-          !!dog &&
+      {data.map((dog) =>
+        isFavorite === null ? (
+          <DogCard
+            changeFavorite={changeFavorite}
+            deleteDog={deleteDog}
+            dog={dog}
+            key={dog.id}
+          />
+        ) : (
           dog.isFavorite === isFavorite && (
             <DogCard
               changeFavorite={changeFavorite}
@@ -54,6 +60,7 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
               key={dog.id}
             />
           )
+        )
       )}
     </>
   );

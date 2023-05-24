@@ -1,6 +1,45 @@
-export const Section = ({ label, children,onClick }) => {
+export const Section = ({
+  label,
+  children,
+  setIsFavorite,
+  setIsCreatePage,
+  isCreatePage,
+}) => {
   const favoriteDogCount = 1;
   const unfavoriteDogCount = 2;
+
+  /*  const createDog = async () => {
+    try {
+      const response = await fetch(`${URL}${id}`, {
+        method: "POST",
+      });
+      console.log(data);
+      if (response.ok) {
+        setData((prevState) =>  );
+        //   fetchData();
+      }
+    } catch (error) {
+      console.error(`Error: ${error}`);
+    }
+  }; */
+  const changeActive = (e) => {
+    if (e.target.className === "selector active") {
+      e.target.classList.remove("active");
+    } else {
+      const div = document.querySelector(".active");
+      div && div.classList.remove("active");
+      e.target.classList.add("active");
+    }
+  };
+
+  const changeFavorite = (e, isFavorite) => {
+    setIsCreatePage(false);
+    setIsFavorite((prevState) =>
+      prevState === isFavorite ? null : isFavorite
+    );
+    changeActive(e);
+  };
+
   return (
     <section>
       <div className="container-header">
@@ -8,13 +47,26 @@ export const Section = ({ label, children,onClick }) => {
         <div className="selectors">
           {/* Add the class 'active' to any selector in order to make it's color change */}
           {/* This should display the favorited count */}
-          <div onClick={()=>onClick(true)} className={`selector active`}>
+          <div
+            onClick={(e) => changeFavorite(e, true)}
+            className={`selector active`}
+          >
             favorited ( {favoriteDogCount} )
           </div>
 
           {/* This should display the unfavorited count */}
-          <div onClick={()=>onClick(false)}  className={`selector`}>unfavorited ( {unfavoriteDogCount} )</div>
-          <div className={`selector`}>create dog</div>
+          <div onClick={(e) => changeFavorite(e, false)} className={`selector`}>
+            unfavorited ( {unfavoriteDogCount} )
+          </div>
+          <div
+            onClick={(e) => {
+              setIsCreatePage(!isCreatePage);
+              changeActive(e);
+            }}
+            className={`selector`}
+          >
+            {isCreatePage ? "Go Back to Main Page" : "Create Dog"}
+          </div>
         </div>
       </div>
       {children}
