@@ -1,1 +1,130 @@
-{"dogs":[{"name":"Carter","image":"/src/assets/blue-heeler.png","description":"Northeast watt Awesome generating Diesel","isFavorite":false,"id":0},{"name":"Ara","image":"/src/assets/cowardly.png","description":"Ocala yellow Aston till Northwest input feed virtual","isFavorite":true,"id":1},{"name":"Lucinda","image":"/src/assets/boxer.png","description":"Alley Practical program East Convertible models Marketing Recycled","isFavorite":false,"id":2},{"name":"Karson","image":"/src/assets/dalmation.png","description":"Rubber Chromium Darby hub Southwest whoa Electric","isFavorite":false,"id":3},{"name":"Josue","image":"/src/assets/boxer.png","description":"parsing Consultant invoice gold Handcrafted","isFavorite":false,"id":4},{"name":"Cathryn","image":"/src/assets/dalmation.png","description":"sleepily Northwest Recycled however eyeballs Hutchinson payment","isFavorite":true,"id":5},{"name":"Kyler","image":"/src/assets/corgi.png","description":"West Cyclocross male abaft which Bedfordshire supposing calculating","isFavorite":false,"id":6},{"name":"Kailee","image":"/src/assets/chihuahua.avif","description":"brand female Country Avon Frozen male yum West","isFavorite":false,"id":7},{"name":"Bryce","image":"/src/assets/dalmation.png","description":"Kia Table Wyoming Account Northeast streamline Fiat Palladium","isFavorite":false,"id":8},{"name":"Flavio","image":"/src/assets/dalmation.png","description":"Pound visible husk AI Southeast","isFavorite":true,"id":9},{"name":"Stevie","image":"/src/assets/corgi.png","description":"Northeast Belarus dimple male calculating","isFavorite":true,"id":10},{"name":"Jennings","image":"/src/assets/chihuahua.avif","description":"Torrance digital Southwest Nebraska Principal Park Regional","isFavorite":false,"id":11},{"name":"Columbus","image":"/src/assets/boxer.png","description":"Newport Automotive Squares panel Senger","isFavorite":false,"id":12},{"name":"Kaylin","image":"/src/assets/boxer.png","description":"Table Cargo Refined communities overriding grey Pine","isFavorite":true,"id":13},{"name":"Aric","image":"/src/assets/blue-heeler.png","description":"Loan Cheese intermediate Republic North","isFavorite":true,"id":14},{"name":"Tito","image":"/src/assets/cowardly.png","description":"absent Ouguiya firewall North BMX","isFavorite":true,"id":15},{"name":"Hortense","image":"/src/assets/chihuahua.avif","description":"Burundi Operations female West Paraguay Games Bronze Mauritius","isFavorite":true,"id":16},{"name":"Brice","image":"/src/assets/corgi.png","description":"Aston wherever Rubber Account Van visionary extract","isFavorite":false,"id":17},{"name":"Quincy","image":"/src/assets/corgi.png","description":"M2F Assistant auxiliary API Cove Global gee Kansas","isFavorite":true,"id":18},{"name":"Katlyn","image":"/src/assets/chihuahua.avif","description":"greet Pop North Bicycle Shoes Corporate voluptatum","isFavorite":true,"id":19}]}
+{
+  "dogs": [
+    {
+      "name": "Trevor",
+      "image": "/src/assets/dalmation.png",
+      "description": "Soft Hat non Montserrat Wisoky Garden calculating modular",
+      "isFavorite": false,
+      "id": 0
+    },
+    {
+      "name": "Georgianna",
+      "image": "/src/assets/boxer.png",
+      "description": "dining SUV Sri Progressive zero South Southeast",
+      "isFavorite": false,
+      "id": 1
+    },
+    {
+      "name": "Joanne",
+      "image": "/src/assets/boxer.png",
+      "description": "Salad Oxygen Cary cost pink up improvement",
+      "isFavorite": false,
+      "id": 3
+    },
+    {
+      "name": "Amalia",
+      "image": "/src/assets/boxer.png",
+      "description": "white Fresh finally adapter East array elliptical",
+      "isFavorite": false,
+      "id": 4
+    },
+    {
+      "name": "Marcia",
+      "image": "/src/assets/corgi.png",
+      "description": "Potassium Southwest Southwest vel woot Boliviano invoice",
+      "isFavorite": false,
+      "id": 6
+    },
+    {
+      "name": "Torrey",
+      "image": "/src/assets/corgi.png",
+      "description": "Tools Books Reggae Cotton metrics",
+      "isFavorite": false,
+      "id": 7
+    },
+    {
+      "name": "Buck",
+      "image": "/src/assets/corgi.png",
+      "description": "olive Waco Persistent North Keyboard Tasty broadly",
+      "isFavorite": false,
+      "id": 8
+    },
+    {
+      "name": "Loma",
+      "image": "/src/assets/cowardly.png",
+      "description": "Technician Dodge New elastic tan Argon bandwidth",
+      "isFavorite": false,
+      "id": 9
+    },
+    {
+      "name": "Estrella",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Ethiopia degree Usability indexing impactful innovate Plains",
+      "isFavorite": true,
+      "id": 10
+    },
+    {
+      "name": "Clint",
+      "image": "/src/assets/dalmation.png",
+      "description": "payment Mini RSS Licensed reciprocal mispronounce Chair",
+      "isFavorite": true,
+      "id": 11
+    },
+    {
+      "name": "Lennie",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "input reliability optical Garden Kroon policy nonconforming Swiss",
+      "isFavorite": true,
+      "id": 12
+    },
+    {
+      "name": "Laurence",
+      "image": "/src/assets/corgi.png",
+      "description": "blue South East Lilangeni Compatible olive brr Bespoke",
+      "isFavorite": true,
+      "id": 13
+    },
+    {
+      "name": "Forest",
+      "image": "/src/assets/boxer.png",
+      "description": "Lempira Extensions Salad Northwest at Ford Electric Gasoline",
+      "isFavorite": true,
+      "id": 14
+    },
+    {
+      "name": "Mason",
+      "image": "/src/assets/boxer.png",
+      "description": "Tasty Plantation yuck against male",
+      "isFavorite": false,
+      "id": 15
+    },
+    {
+      "name": "Luciano",
+      "image": "/src/assets/cowardly.png",
+      "description": "Ohio Liaison Gasoline Sausages reboot",
+      "isFavorite": false,
+      "id": 16
+    },
+    {
+      "name": "Camren",
+      "image": "/src/assets/cowardly.png",
+      "description": "copying matrix dolore lime Jersey",
+      "isFavorite": false,
+      "id": 17
+    },
+    {
+      "name": "Luigi",
+      "image": "/src/assets/corgi.png",
+      "description": "Account calculate Northeast navigating Manchester Metrics Sudan",
+      "isFavorite": false,
+      "id": 18
+    },
+    {
+      "name": "Emmie",
+      "image": "/src/assets/cowardly.png",
+      "description": "chief Southwest Savings Interactions consequently",
+      "isFavorite": true,
+      "id": 19
+    }
+  ]
+}

@@ -1,11 +1,27 @@
+import { useEffect } from "react";
 import { DogCard } from "./DogCard";
 
-export const Dogs = ({ data, isFavorite }) => {
-  const deleteDog = (id) => {
-    fetch(`http://localhost:3000/dogs/${id}`, { method: "DELETE" });
-    const dog = data.findIndex((item) => item.id === id);
-    data.splice(dog, 1);
+export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
+  const deleteDog = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:3000/dogs/${id}`, {
+        method: "DELETE",
+      });
+      console.log(data);
+      if (response.ok) {
+        const dogs = data.filter((item) => item.id !== id);
+        console.log(dogs);
+      //   setData(dogs);
+		fetchData();
+      }
+    } catch (error) {
+      console.error(`Error: ${error}`);
+    }
   };
+  /* 
+  useEffect(() => {
+    console.log(data);
+  }, [data]); */
 
   return (
     //  the "<> </>"" are called react fragments, it's like adding all the html inside
@@ -13,7 +29,10 @@ export const Dogs = ({ data, isFavorite }) => {
     <>
       {data.map(
         (dog) =>
-          dog.isFavorite === isFavorite && <DogCard deleteDog={deleteDog}  dog={dog} key={dog.id} />
+          !!dog &&
+          dog.isFavorite === isFavorite && (
+            <DogCard deleteDog={deleteDog} dog={dog} key={dog.id} />
+          )
       )}
     </>
   );
