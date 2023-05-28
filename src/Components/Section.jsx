@@ -8,23 +8,12 @@ export const Section = ({
   const favoriteDogCount = 1;
   const unfavoriteDogCount = 2;
 
-  /*  const createDog = async () => {
-    try {
-      const response = await fetch(`${URL}${id}`, {
-        method: "POST",
-      });
-      console.log(data);
-      if (response.ok) {
-        setData((prevState) =>  );
-        //   fetchData();
-      }
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
-  }; */
+  
+//   Need some refactoring
   const changeActive = (e) => {
     if (e.target.className === "selector active") {
       e.target.classList.remove("active");
+      setIsFavorite(null);
     } else {
       const div = document.querySelector(".active");
       div && div.classList.remove("active");

@@ -1,104 +1,6 @@
 {
   "dogs": [
     {
-      "name": "Clarissa",
-      "image": "/src/assets/cowardly.png",
-      "description": "Oriental Southwest process West archive",
-      "isFavorite": false,
-      "id": 0
-    },
-    {
-      "name": "Waldo",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "female generation JSON Reduced Sierra Bike Recumbent Frozen",
-      "isFavorite": false,
-      "id": 1
-    },
-    {
-      "name": "Courtney",
-      "image": "/src/assets/corgi.png",
-      "description": "invoice Transgender male disintermediate female",
-      "isFavorite": false,
-      "id": 3
-    },
-    {
-      "name": "Rahsaan",
-      "image": "/src/assets/dalmation.png",
-      "description": "magenta bah Supervisor forward female",
-      "isFavorite": true,
-      "id": 5
-    },
-    {
-      "name": "Emmie",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "Electric Loan Hybrid crushing Fantastic",
-      "isFavorite": false,
-      "id": 6
-    },
-    {
-      "name": "Brandi",
-      "image": "/src/assets/cowardly.png",
-      "description": "Security calmly New maiores boo",
-      "isFavorite": true,
-      "id": 7
-    },
-    {
-      "name": "Reta",
-      "image": "/src/assets/cowardly.png",
-      "description": "override Buckinghamshire into radian transmitter",
-      "isFavorite": false,
-      "id": 8
-    },
-    {
-      "name": "Sven",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "Zambia picket Jordan niches duh",
-      "isFavorite": false,
-      "id": 9
-    },
-    {
-      "name": "Wilfrid",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "transmitting towards contingency Games neural quantifying wireless synthesizing",
-      "isFavorite": true,
-      "id": 10
-    },
-    {
-      "name": "Wilfredo",
-      "image": "/src/assets/cowardly.png",
-      "description": "empowering Savings Rupee Refined Sausages support Kip",
-      "isFavorite": false,
-      "id": 11
-    },
-    {
-      "name": "Zachery",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "reintermediate wireless model World fast Thulium Kilback",
-      "isFavorite": false,
-      "id": 12
-    },
-    {
-      "name": "Lorine",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "multimedia Unbranded male Country twister",
-      "isFavorite": false,
-      "id": 13
-    },
-    {
-      "name": "Mose",
-      "image": "/src/assets/dalmation.png",
-      "description": "Towels female Direct South Account Strategist Idaho Road",
-      "isFavorite": true,
-      "id": 14
-    },
-    {
-      "name": "Marjolaine",
-      "image": "/src/assets/cowardly.png",
-      "description": "Fish backing Non Shoes East MTF Account South",
-      "isFavorite": false,
-      "id": 15
-    },
-    {
       "name": "Mona",
       "image": "/src/assets/chihuahua.avif",
       "description": "alarm Hybrid quantify architect male",
@@ -113,18 +15,18 @@
       "id": 17
     },
     {
-      "name": "Mikayla",
-      "image": "/src/assets/boxer.png",
-      "description": "grieve Washington Metal skeleton mole Bedfordshire BMW",
-      "isFavorite": false,
-      "id": 18
-    },
-    {
       "name": "Schuyler",
       "image": "/src/assets/blue-heeler.png",
       "description": "muffled Car because 24 Intuitive",
       "isFavorite": false,
       "id": 19
+    },
+    {
+      "name": "aww",
+      "description": "aww",
+      "image": "/src/assets/blue-heeler.png",
+      "isFavorite": false,
+      "id": 20
     }
   ]
 }

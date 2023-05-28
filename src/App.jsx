@@ -30,7 +30,7 @@ function App() {
         </header>
         <Section isCreatePage={isCreatePage} setIsCreatePage={setIsCreatePage} setIsFavorite={setIsFavorite} label={"Dogs: "}>
           {isCreatePage ? (
-            <CreateDogForm  />
+            <CreateDogForm  setData={setData} />
           ) : (
             <Dogs
               fetchData={fetchData}

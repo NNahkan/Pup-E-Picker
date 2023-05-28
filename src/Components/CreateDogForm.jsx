@@ -1,27 +1,77 @@
 import { useState } from "react";
 import { dogPictures } from "../assets/dog-pictures";
 
-export const CreateDogForm = ({ addDog }) => {
-  const [selectedImage, setSelectedImage] = useState(dogPictures.BlueHeeler);
+const URL = "http://localhost:3000/dogs/";
+
+export const CreateDogForm = ({ setData }) => {
+  const [userInput, setUserInput] = useState({
+    name: "",
+    description: "",
+    image: dogPictures.BlueHeeler,
+  });
+
+  const handleInput = (e) => {
+    const { name, value } = e.target;
+    setUserInput((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const createDog = async (dog) => {
+    const body = { ...dog, isFavorite: false };
+    try {
+      const response = await fetch(URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+      if (response.ok) {
+        setData((prevState) => [...prevState, dog]);
+        console.log("calisti");
+      }
+    } catch (error) {
+      console.error(`Error: ${error}`);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    let isInput = true;
+    e.preventDefault();
+    Object.keys(userInput).forEach((key) => {
+      if (userInput[key].trim() === "") isInput = false;
+    });
+
+    isInput ? createDog(userInput) : alert("Empty inputs");
+  };
 
   return (
     <form
       action=""
       id="create-dog-form"
       onSubmit={(e) => {
-        e.preventDefault();
+        handleSubmit(e);
       }}
     >
       <h4>Create a New Dog</h4>
       <label htmlFor="name">Dog Name</label>
-      <input type="text" />
+      <input onChange={(e) => handleInput(e)} type="text" name="name" />
       <label htmlFor="description">Dog Description</label>
-      <textarea name="" id="" cols="80" rows="10"></textarea>
+      <textarea
+        onChange={(e) => handleInput(e)}
+        name="description"
+        id=""
+        cols="80"
+        rows="10"
+      ></textarea>
       <label htmlFor="picture">Select an Image</label>
       <select
+        name="image"
         id=""
         onChange={(e) => {
-          setSelectedImage(e.target.value);
+          handleInput(e);
         }}
       >
         {Object.entries(dogPictures).map(([label, pictureValue]) => {

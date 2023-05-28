@@ -8,8 +8,7 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
       const response = await fetch(`${URL}${id}`, {
         method: "DELETE",
       });
-      console.log(data);
-      if (response.ok) {
+       if (response.ok) {
         setData((prevState) => prevState.filter((item) => item.id !== id));
         //   fetchData();
       }
