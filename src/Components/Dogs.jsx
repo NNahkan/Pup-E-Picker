@@ -8,7 +8,7 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
       const response = await fetch(`${URL}${id}`, {
         method: "DELETE",
       });
-       if (response.ok) {
+      if (response.ok) {
         setData((prevState) => prevState.filter((item) => item.id !== id));
         //   fetchData();
       }
@@ -19,6 +19,7 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
 
   const changeFavorite = async (dog) => {
     dog.isFavorite = !dog.isFavorite;
+    console.log(dog.id);
     try {
       const response = await fetch(`${URL}${dog.id}`, {
         method: "PUT",

@@ -28,12 +28,20 @@ function App() {
         <header>
           <h1>pup-e-picker </h1>
         </header>
-        <Section isCreatePage={isCreatePage} setIsCreatePage={setIsCreatePage} setIsFavorite={setIsFavorite} label={"Dogs: "}>
+        <Section
+          isCreatePage={isCreatePage}
+          setIsCreatePage={setIsCreatePage}
+          setIsFavorite={setIsFavorite}
+          label={"Dogs: "}
+        >
           {isCreatePage ? (
-            <CreateDogForm  setData={setData} />
+            <CreateDogForm
+              fetchData={fetchData}
+              setIsCreatePage={setIsCreatePage}
+              setData={setData}
+            />
           ) : (
             <Dogs
-              fetchData={fetchData}
               isFavorite={isFavorite}
               data={data}
               setData={setData}

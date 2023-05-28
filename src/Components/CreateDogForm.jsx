@@ -3,7 +3,7 @@ import { dogPictures } from "../assets/dog-pictures";
 
 const URL = "http://localhost:3000/dogs/";
 
-export const CreateDogForm = ({ setData }) => {
+export const CreateDogForm = ({ fetchData, setIsCreatePage }) => {
   const [userInput, setUserInput] = useState({
     name: "",
     description: "",
@@ -29,8 +29,8 @@ export const CreateDogForm = ({ setData }) => {
         body: JSON.stringify(body),
       });
       if (response.ok) {
-        setData((prevState) => [...prevState, dog]);
-        console.log("calisti");
+        // Fetching data to get id for new dog
+        fetchData();
       }
     } catch (error) {
       console.error(`Error: ${error}`);
@@ -44,7 +44,14 @@ export const CreateDogForm = ({ setData }) => {
       if (userInput[key].trim() === "") isInput = false;
     });
 
-    isInput ? createDog(userInput) : alert("Empty inputs");
+    if (isInput) {
+      createDog(userInput);
+      setIsCreatePage(false);
+		const active = document.querySelector(".active")
+		active && active.classList.remove("active")
+    } else {
+      alert("Input missed");
+    }
   };
 
   return (
