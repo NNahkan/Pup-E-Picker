@@ -2,7 +2,7 @@ import { deleteDog, updateFavorite } from "../service";
 import { DogCard } from "./DogCard";
 
 export const Dogs = ({ data, isFavorite, setData }) => {
-  const deleteFetch = async (id) => {
+  const deleteFetch =  (id) => {
     deleteDog(id).then(
       setData((prevState) => prevState.filter((item) => item.id !== id))
     );
