@@ -1,42 +1,15 @@
+import { deleteDog, updateFavorite } from "../service";
 import { DogCard } from "./DogCard";
 
-const URL = "http://localhost:3000/dogs/";
-
-export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
-  const deleteDog = async (id) => {
-    try {
-      const response = await fetch(`${URL}${id}`, {
-        method: "DELETE",
-      });
-      if (response.ok) {
-        setData((prevState) => prevState.filter((item) => item.id !== id));
-        //   fetchData();
-      }
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
+export const Dogs = ({ data, isFavorite, setData }) => {
+  const deleteFetch = async (id) => {
+    deleteDog(id).then(
+      setData((prevState) => prevState.filter((item) => item.id !== id))
+    );
   };
 
-  const changeFavorite = async (dog) => {
-    dog.isFavorite = !dog.isFavorite;
-    console.log(dog.id);
-    try {
-      const response = await fetch(`${URL}${dog.id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dog),
-      });
-      if (response.ok) {
-        setData((prevState) =>
-          prevState.map((item) => (item.id === dog.id ? dog : item))
-        );
-        //   fetchData();
-      }
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
+  const changeFavorite = (dog) => {
+    updateFavorite(dog, setData);
   };
 
   return (
@@ -47,7 +20,7 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
         isFavorite === null ? (
           <DogCard
             changeFavorite={changeFavorite}
-            deleteDog={deleteDog}
+            deleteFetch={deleteFetch}
             dog={dog}
             key={dog.id}
           />
@@ -55,7 +28,7 @@ export const Dogs = ({ data, isFavorite, setData, fetchData }) => {
           dog.isFavorite === isFavorite && (
             <DogCard
               changeFavorite={changeFavorite}
-              deleteDog={deleteDog}
+              deleteFetch={deleteFetch}
               dog={dog}
               key={dog.id}
             />

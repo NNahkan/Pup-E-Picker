@@ -4,14 +4,14 @@
       "name": "Mona",
       "image": "/src/assets/chihuahua.avif",
       "description": "alarm Hybrid quantify architect male",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 16
     },
     {
       "name": "Demond",
       "image": "/src/assets/blue-heeler.png",
       "description": "Hybrid Trial male Hydrogen compelling Cotton restfully",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 17
     },
     {
@@ -20,41 +20,6 @@
       "description": "muffled Car because 24 Intuitive",
       "isFavorite": false,
       "id": 19
-    },
-    {
-      "name": "aa",
-      "description": "q123",
-      "image": "/src/assets/blue-heeler.png",
-      "isFavorite": false,
-      "id": 20
-    },
-    {
-      "name": "abbb",
-      "description": "2",
-      "image": "/src/assets/boxer.jpeg",
-      "isFavorite": true,
-      "id": 21
-    },
-    {
-      "name": "Hakoleyta",
-      "description": "Crazy dog for even dreaming. don't touch with bare hand.. or do it ",
-      "image": "/src/assets/cowardly.png",
-      "isFavorite": false,
-      "id": 22
-    },
-    {
-      "name": "Hakoleyta",
-      "description": "Crazy dog for even dreaming. don't touch with bare hand.. or do it ",
-      "image": "/src/assets/cowardly.png",
-      "isFavorite": false,
-      "id": 23
-    },
-    {
-      "name": "Babulataynya",
-      "description": "Tennsee white walker",
-      "image": "/src/assets/blue-heeler.png",
-      "isFavorite": false,
-      "id": 24
     }
   ]
 }

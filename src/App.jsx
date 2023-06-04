@@ -4,22 +4,15 @@ import { CreateDogForm } from "./Components/CreateDogForm";
 import { Dogs } from "./Components/Dogs";
 import { Section } from "./Components/Section";
 import "./fonts/RubikBubbles-Regular.ttf";
-
-const URL = "http://localhost:3000/dogs";
+import { getAllDogsFetch } from "./service";
 
 function App() {
   const [data, setData] = useState(null);
   const [isFavorite, setIsFavorite] = useState(null);
   const [isCreatePage, setIsCreatePage] = useState(false);
 
-  const fetchData = async () => {
-    const response = await fetch(URL);
-    const newData = await response.json();
-    setData(newData);
-  };
-
   useEffect(() => {
-    fetchData();
+    getAllDogsFetch(setData);
   }, []);
 
   return (
@@ -36,7 +29,6 @@ function App() {
         >
           {isCreatePage ? (
             <CreateDogForm
-              fetchData={fetchData}
               setIsCreatePage={setIsCreatePage}
               setData={setData}
             />

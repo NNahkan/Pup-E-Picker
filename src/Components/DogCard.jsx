@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FavoriteButton } from "./FavoriteButton";
 import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
-export const DogCard = ({ dog, deleteDog, changeFavorite }) => {
+export const DogCard = ({ dog, deleteFetch, changeFavorite }) => {
 
   const { name, image, description, id, isFavorite } = dog;
   return (
@@ -17,7 +17,7 @@ export const DogCard = ({ dog, deleteDog, changeFavorite }) => {
       {/* Use this button to delete a puppy :( */}
       <TrashButton
         //   disabled={true}
-        onClick={() => deleteDog(id)}
+        onClick={() => deleteFetch(id)}
       />
 
       {/* Ignore this  */}

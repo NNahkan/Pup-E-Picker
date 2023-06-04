@@ -8,8 +8,7 @@ export const Section = ({
   const favoriteDogCount = 1;
   const unfavoriteDogCount = 2;
 
-  
-//   Need some refactoring
+  //   Need some refactoring
   const changeActive = (e) => {
     if (e.target.className === "selector active") {
       e.target.classList.remove("active");
@@ -36,10 +35,7 @@ export const Section = ({
         <div className="selectors">
           {/* Add the class 'active' to any selector in order to make it's color change */}
           {/* This should display the favorited count */}
-          <div
-            onClick={(e) => changeFavorite(e, true)}
-            className={`selector active`}
-          >
+          <div onClick={(e) => changeFavorite(e, true)} className={`selector`}>
             favorited ( {favoriteDogCount} )
           </div>
 

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { dogPictures } from "../assets/dog-pictures";
+import { createNewDog } from "../service";
 
-const URL = "http://localhost:3000/dogs/";
-
-export const CreateDogForm = ({ fetchData, setIsCreatePage }) => {
+export const CreateDogForm = ({ setData, setIsCreatePage }) => {
   const [userInput, setUserInput] = useState({
     name: "",
     description: "",
@@ -18,23 +17,8 @@ export const CreateDogForm = ({ fetchData, setIsCreatePage }) => {
     }));
   };
 
-  const createDog = async (dog) => {
-    const body = { ...dog, isFavorite: false };
-    try {
-      const response = await fetch(URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body),
-      });
-      if (response.ok) {
-        // Fetching data to get id for new dog
-        fetchData();
-      }
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
+  const createDog = (dog) => {
+    createNewDog(dog, setData);
   };
 
   const handleSubmit = (e) => {
@@ -47,8 +31,8 @@ export const CreateDogForm = ({ fetchData, setIsCreatePage }) => {
     if (isInput) {
       createDog(userInput);
       setIsCreatePage(false);
-		const active = document.querySelector(".active")
-		active && active.classList.remove("active")
+      const active = document.querySelector(".active");
+      active && active.classList.remove("active");
     } else {
       alert("Input missed");
     }
