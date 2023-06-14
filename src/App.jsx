@@ -26,11 +26,13 @@ function App() {
           setIsCreatePage={setIsCreatePage}
           setIsFavorite={setIsFavorite}
           label={"Dogs: "}
+          data={data}
         >
           {isCreatePage ? (
             <CreateDogForm
               setIsCreatePage={setIsCreatePage}
               setData={setData}
+              isFavorite={isFavorite}
             />
           ) : (
             <Dogs

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { dogPictures } from "../assets/dog-pictures";
 import { createNewDog } from "../service";
 
-export const CreateDogForm = ({ setData, setIsCreatePage }) => {
+export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
   const [userInput, setUserInput] = useState({
     name: "",
     description: "",
@@ -33,6 +33,13 @@ export const CreateDogForm = ({ setData, setIsCreatePage }) => {
       setIsCreatePage(false);
       const active = document.querySelector(".active");
       active && active.classList.remove("active");
+      if (isFavorite !== null) {
+        const sectionButtons = document.querySelectorAll(".selector");
+        const choosenButton = isFavorite
+          ? sectionButtons[0]
+          : sectionButtons[1];
+        choosenButton.classList.add("active");
+      }
     } else {
       alert("Input missed");
     }

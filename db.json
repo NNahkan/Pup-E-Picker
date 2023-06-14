@@ -11,7 +11,7 @@
       "name": "Demond",
       "image": "/src/assets/blue-heeler.png",
       "description": "Hybrid Trial male Hydrogen compelling Cotton restfully",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 17
     },
     {
@@ -20,6 +20,20 @@
       "description": "muffled Car because 24 Intuitive",
       "isFavorite": false,
       "id": 19
+    },
+    {
+      "name": "asd",
+      "description": "asdasd",
+      "image": "/src/assets/blue-heeler.png",
+      "isFavorite": false,
+      "id": 20
+    },
+    {
+      "name": "asda",
+      "description": "asdad",
+      "image": "/src/assets/blue-heeler.png",
+      "isFavorite": false,
+      "id": 21
     }
   ]
 }

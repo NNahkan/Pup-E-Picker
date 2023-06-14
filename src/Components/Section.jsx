@@ -4,9 +4,12 @@ export const Section = ({
   setIsFavorite,
   setIsCreatePage,
   isCreatePage,
+  data,
 }) => {
-  const favoriteDogCount = 1;
-  const unfavoriteDogCount = 2;
+  const favoriteDogCount = data.reduce((acc, cur) => {
+    return cur.isFavorite ? acc + 1 : acc;
+  }, 0);
+  const unfavoriteDogCount = data.length - favoriteDogCount;
 
   //   Need some refactoring
   const changeActive = (e) => {
