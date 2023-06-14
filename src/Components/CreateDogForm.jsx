@@ -28,9 +28,11 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
       if (userInput[key].trim() === "") isInput = false;
     });
 
+	//  That function against the DRY principle, i SHould find to way to make it better
     if (isInput) {
       createDog(userInput);
       setIsCreatePage(false);
+		// creating a function to do all the className changes
       const active = document.querySelector(".active");
       active && active.classList.remove("active");
       if (isFavorite !== null) {
