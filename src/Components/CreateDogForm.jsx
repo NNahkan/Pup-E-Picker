@@ -9,6 +9,16 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
     image: dogPictures.BlueHeeler,
   });
 
+  const classNameChanger = () => {
+    const active = document.querySelector(".active");
+    active && active.classList.remove("active");
+    if (isFavorite !== null) {
+      const sectionButtons = document.querySelectorAll(".selector");
+      const choosenButton = isFavorite ? sectionButtons[0] : sectionButtons[1];
+      choosenButton.classList.add("active");
+    }
+  };
+
   const handleInput = (e) => {
     const { name, value } = e.target;
     setUserInput((prevState) => ({
@@ -28,20 +38,11 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
       if (userInput[key].trim() === "") isInput = false;
     });
 
-	//  That function against the DRY principle, i SHould find to way to make it better
+    //  That function against the DRY principle, i SHould find to way to make it better
     if (isInput) {
       createDog(userInput);
       setIsCreatePage(false);
-		// creating a function to do all the className changes
-      const active = document.querySelector(".active");
-      active && active.classList.remove("active");
-      if (isFavorite !== null) {
-        const sectionButtons = document.querySelectorAll(".selector");
-        const choosenButton = isFavorite
-          ? sectionButtons[0]
-          : sectionButtons[1];
-        choosenButton.classList.add("active");
-      }
+      classNameChanger();
     } else {
       alert("Input missed");
     }
