@@ -37,8 +37,6 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
     Object.keys(userInput).forEach((key) => {
       if (userInput[key].trim() === "") isInput = false;
     });
-
-    //  That function against the DRY principle, i SHould find to way to make it better
     if (isInput) {
       createDog(userInput);
       setIsCreatePage(false);
