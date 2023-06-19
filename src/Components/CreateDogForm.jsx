@@ -9,15 +9,7 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
     image: dogPictures.BlueHeeler,
   });
 
-  const classNameChanger = () => {
-    const active = document.querySelector(".active");
-    active && active.classList.remove("active");
-    if (isFavorite !== null) {
-      const sectionButtons = document.querySelectorAll(".selector");
-      const choosenButton = isFavorite ? sectionButtons[0] : sectionButtons[1];
-      choosenButton.classList.add("active");
-    }
-  };
+  
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -40,8 +32,7 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
     if (isInput) {
       createDog(userInput);
       setIsCreatePage(false);
-      classNameChanger();
-    } else {
+     } else {
       alert("Input missed");
     }
   };
