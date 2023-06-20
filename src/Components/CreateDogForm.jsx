@@ -36,6 +36,7 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
       alert("Input missed");
     }
   };
+//   start from here 
 
   return (
     <form
