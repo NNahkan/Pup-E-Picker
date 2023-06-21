@@ -23,6 +23,7 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
     createNewDog(dog, setData);
   };
 
+  
   const handleSubmit = (e) => {
     let isInput = true;
     e.preventDefault();
@@ -37,6 +38,7 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
     }
   };
 //   start from here 
+
 
   return (
     <form
