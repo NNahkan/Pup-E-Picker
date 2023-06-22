@@ -1,53 +1,32 @@
 {
-	"dogs": [
-		{
-			"name": "Mona",
-			"image": "/src/assets/chihuahua.avif",
-			"description": "alarm Hybrid quantify architect male",
-			"isFavorite": false,
-			"id": 16
-		},
-		{
-			"name": "Demond",
-			"image": "/src/assets/blue-heeler.png",
-			"description": "Hybrid Trial male Hydrogen compelling Cotton restfully",
-			"isFavorite": true,
-			"id": 17
-		},
-		{
-			"name": "Schuyler",
-			"image": "/src/assets/blue-heeler.png",
-			"description": "muffled Car because 24 Intuitive",
-			"isFavorite": false,
-			"id": 19
-		},
-		{
-			"name": "asd",
-			"description": "asdasd",
-			"image": "/src/assets/blue-heeler.png",
-			"isFavorite": false,
-			"id": 20
-		},
-		{
-			"name": "asdasda",
-			"description": "asasddad",
-			"image": "/src/assets/blue-heeler.png",
-			"isFavorite": false,
-			"id": 21
-		},
-		{
-			"name": "asdasdasa",
-			"description": "asdasdad",
-			"image": "/src/assets/blue-heeler.png",
-			"isFavorite": false,
-			"id": 22
-		},
-		{
-			"name": "asdaasda",
-			"description": "aasadsasdad",
-			"image": "/src/assets/blue-heeler.png",
-			"isFavorite": false,
-			"id": 23
-		}
-	]
+  "dogs": [
+    {
+      "name": "Mona",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "alarm Hybrid quantify architect male",
+      "isFavorite": false,
+      "id": 16
+    },
+    {
+      "name": "Demond",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Hybrid Trial male Hydrogen compelling Cotton restfully",
+      "isFavorite": true,
+      "id": 17
+    },
+    {
+      "name": "Schuyler",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "muffled Car because 24 Intuitive",
+      "isFavorite": false,
+      "id": 19
+    },
+    {
+      "name": "ahah",
+      "description": "aa",
+      "image": "/src/assets/cowardly.png",
+      "isFavorite": false,
+      "id": 20
+    }
+  ]
 }

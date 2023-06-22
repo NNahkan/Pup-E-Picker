@@ -2,14 +2,12 @@ import { useState } from "react";
 import { dogPictures } from "../assets/dog-pictures";
 import { createNewDog } from "../service";
 
-export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
+export const CreateDogForm = ({ setData }) => {
   const [userInput, setUserInput] = useState({
     name: "",
     description: "",
     image: dogPictures.BlueHeeler,
   });
-
-  
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -19,11 +17,6 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
     }));
   };
 
-  const createDog = (dog) => {
-    createNewDog(dog, setData);
-  };
-
-  
   const handleSubmit = (e) => {
     let isInput = true;
     e.preventDefault();
@@ -31,14 +24,12 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
       if (userInput[key].trim() === "") isInput = false;
     });
     if (isInput) {
-      createDog(userInput);
-      setIsCreatePage(false);
-     } else {
+      createNewDog(userInput, setData);
+    } else {
       alert("Input missed");
     }
   };
-//   start from here 
-
+  //   start from here
 
   return (
     <form
@@ -68,7 +59,11 @@ export const CreateDogForm = ({ setData, setIsCreatePage, isFavorite }) => {
         }}
       >
         {Object.entries(dogPictures).map(([label, pictureValue]) => {
-          return <option value={pictureValue}>{label}</option>;
+          return (
+            <option key={pictureValue} value={pictureValue}>
+              {label}
+            </option>
+          );
         })}
       </select>
       <input type="submit" value="submit" />
